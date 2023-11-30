@@ -1,5 +1,5 @@
 <p>Liste des Threads</p>
-<div class="side" *ngFor="let thread of threads" (click)="selectThread(thread)">
+<div class="side" *ngFor="let thread of threads">
   <button (click)="selectThread(thread)">{{ thread.label }}</button>
 </div>
 <div class="messageList">
