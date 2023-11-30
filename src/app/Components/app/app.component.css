@@ -1,22 +1,20 @@
-
 .site-title {
   text-align: center;
   font-size: 28px;
   margin-bottom: 30px;
-  color: #333; 
-  text-transform: uppercase; 
-  letter-spacing: 2px; 
-
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
 
 .site-title::after {
   content: "";
   display: block;
   width: 50px;
   height: 2px;
-  background-color: #007bff; 
+  background-color: #007bff;
   margin: 10px auto;
 }
-
 
 .login-container {
   max-width: 300px;
@@ -28,13 +26,11 @@
   background-color: #fff;
 }
 
-
 .login-container p {
   margin-bottom: 10px;
   font-size: 16px;
   font-weight: bold;
 }
-
 
 .login-container input[type="text"] {
   width: 100%;
@@ -44,7 +40,6 @@
   border-radius: 3px;
   box-sizing: border-box;
 }
-
 
 .login-container button {
   width: 100%;
