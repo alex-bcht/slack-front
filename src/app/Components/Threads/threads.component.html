@@ -1,16 +1,16 @@
 <p>Liste des Threads</p>
 <div class="side" *ngFor="let thread of threads" (click)="selectThread(thread)">
-  <button class="select">{{ thread.label }}</button>
+  <button (click)="selectThread(thread)">{{ thread.label }}</button>
 </div>
 <div class="messageList">
   <div *ngFor="let message of messages">
-    <app-messages></app-messages>
+    <app-messages [message]="message"></app-messages>
   </div>
 </div>
 <div class="messageForm">
   <form>
     <label for="message">Message :</label>
-    <input type="text" name="message" [(ngModel)]="message" />
-    <button (click)="sendMessage()">Envoyer</button>
+    <input type="text" name="message" [(ngModel)]="this.message" />
+    <button (click)="this.sendMessage()">Envoyer</button>
   </form>
 </div>
