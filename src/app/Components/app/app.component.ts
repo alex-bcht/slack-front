@@ -6,7 +6,7 @@ import { CommonModule } from "@angular/common";
 
 // Import des composants ThreadsComponent et MessagesComponent
 import { ThreadsComponent } from "../Threads/threads.component";
-//  import { MessagesComponent } from "../Messages/messages.component";  // DECOMMENTER L'IMPORT
+import { MessagesComponent } from "../Messages/messages.component"; // DECOMMENTER L'IMPORT
 
 // Import du service User et UserService depuis le fichier user.service
 import { User, UserService } from "../../Services/user.service";
@@ -23,11 +23,7 @@ import { FormsModule } from "@angular/forms";
   standalone: true,
 
   // Liste des modules importés pour ce composant
-  imports: [
-    CommonModule,
-    ThreadsComponent,
-    /*MessagesComponent, */ FormsModule,
-  ], // DECOMMENTER MESSAGESCOMPONENT et THREADSCOMPONENT
+  imports: [CommonModule, ThreadsComponent, MessagesComponent, FormsModule], // DECOMMENTER MESSAGESCOMPONENT et THREADSCOMPONENT
 
   // Chemin vers le fichier HTML associé à ce composant
   templateUrl: "./app.component.html",
