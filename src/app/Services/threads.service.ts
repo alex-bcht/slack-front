@@ -1,7 +1,6 @@
 import { HttpClient } from "@angular/common/http";
 import { Injectable } from "@angular/core";
 
-// Définition de l'interface Threads représentant la structure d'un utilisateur
 export interface Thread {
   id: string;
   label: string;
