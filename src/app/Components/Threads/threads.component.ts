@@ -8,7 +8,7 @@ import { FormsModule } from "@angular/forms";
 
 // Importation des services et composants nécessaires depuis l'application
 import { Thread, ThreadsService } from "../../Services/threads.service";
-// import { MessagesComponent } from "../Messages/messages.component";
+import { MessagesComponent } from "../Messages/messages.component";
 import { Message, MessagesService } from "../../Services/messages.service";
 import { UserService } from "../../Services/user.service";
 
@@ -18,7 +18,7 @@ import { UserService } from "../../Services/user.service";
   // Indique que le composant est autonome
   standalone: true,
   // Modules utilisés par le composant
-  imports: [CommonModule, /* MessagesComponent, */ FormsModule],
+  imports: [CommonModule, MessagesComponent, FormsModule],
   // Chemin vers le fichier de template HTML du composant
   templateUrl: "./threads.component.html",
   // Chemin vers le fichier de style CSS du composant
