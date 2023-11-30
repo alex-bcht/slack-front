@@ -27,11 +27,11 @@ export class ThreadsService {
     return this.http.get(`http://localhost:3000/threads/${id}`);
   }
 
-  createThread(thread: any) {
+  createThread(thread: Thread) {
     return this.http.post("http://localhost:3000/threads", thread);
   }
 
-  updateThread(thread: any) {
+  updateThread(thread: Thread) {
     return this.http.put(`http://localhost:3000/threads/${thread.id}`, thread);
   }
 
