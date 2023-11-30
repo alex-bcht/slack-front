@@ -1,24 +1,23 @@
-/* Style pour le titre du site */
+
 .site-title {
   text-align: center;
   font-size: 28px;
   margin-bottom: 30px;
-  color: #333; /* Couleur du texte */
-  text-transform: uppercase; /* Mettre en majuscules */
-  letter-spacing: 2px; /* Espacement des lettres */
-}
+  color: #333; 
+  text-transform: uppercase; 
+  letter-spacing: 2px; 
 
-/* Optionnel : Bordure en dessous du titre */
+
 .site-title::after {
   content: "";
   display: block;
   width: 50px;
   height: 2px;
-  background-color: #007bff; /* Couleur de la bordure */
+  background-color: #007bff; 
   margin: 10px auto;
 }
 
-/* Style pour la div de connexion */
+
 .login-container {
   max-width: 300px;
   margin: 0 auto;
@@ -29,14 +28,14 @@
   background-color: #fff;
 }
 
-/* Style pour le paragraphe */
+
 .login-container p {
   margin-bottom: 10px;
   font-size: 16px;
   font-weight: bold;
 }
 
-/* Style pour l'input */
+
 .login-container input[type="text"] {
   width: 100%;
   padding: 8px;
@@ -46,7 +45,7 @@
   box-sizing: border-box;
 }
 
-/* Style pour le bouton de connexion */
+
 .login-container button {
   width: 100%;
   padding: 10px;
