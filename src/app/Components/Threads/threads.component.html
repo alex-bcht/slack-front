@@ -11,6 +11,8 @@
   <form>
     <label for="message">Message :</label>
     <input type="text" name="message" [(ngModel)]="this.message" />
-    <button (click)="this.sendMessage()">Envoyer</button>
+    <button (click)="this.sendMessage()" [disabled]="!this.message">
+      Envoyer
+    </button>
   </form>
 </div>
