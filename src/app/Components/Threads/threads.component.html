@@ -10,7 +10,12 @@
 <div class="messageForm">
   <form>
     <label for="message">Message :</label>
-    <input type="text" name="message" [(ngModel)]="this.message" />
+    <input
+      type="text"
+      name="message"
+      [(ngModel)]="this.message"
+      maxlength="2000"
+    />
     <button (click)="this.sendMessage()" [disabled]="!this.message">
       Envoyer
     </button>
