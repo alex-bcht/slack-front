@@ -1,1 +1,10 @@
-<h1>C'est parti pour notre super projet fil rouge !</h1>
+<h1>"Mini-Slack".</h1>
+<div *ngIf="this.UserService.user">
+  <app-threads></app-threads>
+</div>
+
+<div *ngIf="!this.UserService.user">
+  <p>Entrer votre nom d'utilisateur :</p>
+  <input type="text" [(ngModel)]="this.username" />
+  <button click(this.UserService.login(this.username))> Connexion </button>
+</div>
