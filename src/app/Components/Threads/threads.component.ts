@@ -51,6 +51,7 @@ export class ThreadsComponent implements OnInit {
         content: this.message,
         authorId: this.userService.user?.username,
         threadId: this.actualThread.id,
+        date: new Date().getTime(),
       })
       .subscribe((message: any) => {
         this.messages.push(message);
