@@ -1,0 +1,52 @@
+{
+  "users": [
+    {
+      "username": "Kenza",
+      "id": 1
+    },
+    {
+      "username": "Kenza",
+      "id": 2
+    },
+    {
+      "username": "Kenza",
+      "id": 3
+    },
+    {
+      "username": "kenza",
+      "id": 4
+    },
+    {
+      "username": "",
+      "id": 5
+    },
+    {
+      "username": "hujk",
+      "id": 6
+    }
+  ],
+  "messages": [
+    {
+      "content": "Premier message dans la discussion générale !",
+      "authorId": "Kenza",
+      "threadId": "1",
+      "id": 1
+    },
+    {
+      "content": "Salut, je suis la première sur le channel Projets !",
+      "authorId": "Kenza",
+      "threadId": "2",
+      "id": 2
+    }
+  ],
+  "threads": [
+    {
+      "id": "1",
+      "label": "Discussion Générale"
+    },
+    {
+      "id": "2",
+      "label": "Projets"
+    }
+  ]
+}

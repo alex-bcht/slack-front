@@ -1,27 +1,30 @@
-# SlackFront
+# TP Fil Rouge - Mini-Slack
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.1.
+Ce repository constitue une base sur laquelle vous allez travailler.
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Lorsque vous clonez ce depot, faites `npm install` pour installer les dependances.
 
-## Code scaffolding
+---
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Pour pouvoir lancer le front-end
 
-## Build
+Lancez `ng serve` pour lancer le serveur de développement. 
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Allez sur `http://localhost:4200/`. 
 
-## Running unit tests
+---
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Pour pouvoir lancer le back-end
 
-## Running end-to-end tests
+Faites `npm install -g json-server` pour installer les dependances.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Lancez `json-server --watch db.json` pour lancer le serveur de BDD. 
 
-## Further help
+Allez sur `http://localhost:3000/`. 
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+---
+
+# TP
+
+Enoncé : https://nimble-echinacea-d64.notion.site/TP-Mini-Slack-54dbf8b20fa04bfe90f8d5eba0689a4f?pvs=4

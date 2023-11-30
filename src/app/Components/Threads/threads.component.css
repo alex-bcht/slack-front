@@ -1,0 +1,33 @@
+.side {
+  background-color: #fdfdfd;
+  border: 1px solid #e6e6e6;
+  border-radius: 3px;
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 100%;
+  width: 20%;
+  overflow: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.messageList {
+  background-color: #a44242;
+  border: 1px solid #e6e6e6;
+  border-radius: 3px;
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 100%;
+  width: 80%;
+  overflow: auto;
+  position: left;
+  display: flex;
+  flex-direction: column;
+}
