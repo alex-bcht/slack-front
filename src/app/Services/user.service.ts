@@ -15,13 +15,15 @@ export class UserService {
   constructor(private http: HttpClient) {}
 
   login(username: string) {
-    console.log("login" + username);
-    this.http
-      .post("http://localhost:3000/users", { username })
-      .subscribe((user: any) => {
-        console.log("user", user);
-        this.user = user;
-      });
+    if (username.trim() !== "") {
+      console.log("login" + username);
+      this.http
+        .post("http://localhost:3000/users", { username })
+        .subscribe((user: any) => {
+          console.log("user", user);
+          this.user = user;
+        });
+    }
   }
 
   logout() {
