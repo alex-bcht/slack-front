@@ -29,13 +29,13 @@
   </div>
 </div>
 <form>
-  <label for="message">Message :</label>
   <input
     type="text"
     name="message"
     [(ngModel)]="this.message"
     (keyup.enter)="this.sendMessage()"
     maxlength="2000"
+    placeholder="Entrez votre message..."
   />
   <button (click)="this.sendMessage()" [disabled]="!this.message">
     Envoyer

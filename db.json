@@ -115,28 +115,13 @@
     {
       "username": "test",
       "id": 29
+    },
+    {
+      "username": "kamiath",
+      "id": 30
     }
   ],
   "messages": [
-    {
-      "content": "Salut, je suis la première sur le channel Projets !",
-      "authorId": "Kenza",
-      "threadId": "2",
-      "id": 2
-    },
-    {
-      "content": "salut c'est moi",
-      "authorId": "yolo",
-      "threadId": "2",
-      "id": 3
-    },
-    {
-      "content": "yo",
-      "authorId": "lhdqf",
-      "threadId": "2",
-      "date": 1701358011691,
-      "id": 5
-    },
     {
       "content": "sqdqs",
       "authorId": "",
@@ -150,13 +135,6 @@
       "threadId": "1",
       "date": 1701376401552,
       "id": 7
-    },
-    {
-      "content": "fgsdfsgsdf",
-      "authorId": "sqdqsd",
-      "threadId": "2",
-      "date": 1701418402496,
-      "id": 8
     },
     {
       "content": "test",
@@ -189,10 +167,6 @@
     {
       "id": "1",
       "label": "Discussion Générale"
-    },
-    {
-      "id": "2",
-      "label": "Projets"
     }
   ]
 }
