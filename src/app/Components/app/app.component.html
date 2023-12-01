@@ -1,9 +1,14 @@
-<app-threads *ngIf="!this.UserService.user"></app-threads>
+<app-threads *ngIf="this.UserService.user"></app-threads>
 
-<div class="login-container" *ngIf="this.UserService.user">
+<div class="login-container" *ngIf="!this.UserService.user">
   <h1 class="login-title">Mini<span>-Slack</span></h1>
   <p>Entrer votre nom d'utilisateur :</p>
-  <input type="text" [(ngModel)]="this.username" maxlength="20" />
+  <input
+    type="text"
+    [(ngModel)]="this.username"
+    maxlength="20"
+    (keyup.enter)="this.UserService.login(this.username)"
+  />
   <button
     class="buttondisable"
     (click)="this.UserService.login(this.username)"
