@@ -19,9 +19,10 @@
         type="text"
         [(ngModel)]="threadLabel"
         maxlength="30"
+        (keyup.enter)="this.sendThread()"
         placeholder="Nouveau channel"
       />
-      <button [disabled]="!this.threadLabel" (click)="createThread()">
+      <button [disabled]="!this.threadLabel" (click)="sendThread()">
         Nouveau Thread
       </button>
     </div>

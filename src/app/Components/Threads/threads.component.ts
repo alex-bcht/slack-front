@@ -21,7 +21,6 @@ export class ThreadsComponent implements OnInit {
   @Input()
   message!: string;
   threadLabel!: string;
-  id!: string;
 
   constructor(
     public threadsService: ThreadsService,
@@ -57,7 +56,7 @@ export class ThreadsComponent implements OnInit {
         this.message = "";
       });
   }
-  createThread() {
+  sendThread() {
     let lastThreadId = this.getLastThreadId(); // Génère un ID aléatoire pour le thread
     let newThreadId = lastThreadId ? lastThreadId + 1 : 1;
     this.threadsService
