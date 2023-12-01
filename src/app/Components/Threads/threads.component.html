@@ -17,7 +17,7 @@
     <div class="add-thread">
       <input
         type="text"
-        [(ngModel)]="threadLabel"
+        [(ngModel)]="this.threadLabel"
         maxlength="30"
         (keyup.enter)="this.sendThread()"
         placeholder="Nouveau channel"
