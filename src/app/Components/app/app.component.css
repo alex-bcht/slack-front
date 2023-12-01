@@ -5,10 +5,9 @@
 .login-title {
   text-align: center;
   font-size: 28px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   color: #333;
   letter-spacing: 2px;
-  font-weight: 900;
   color: #8b6eb5;
 }
 
@@ -16,7 +15,7 @@
   display: flex;
   flex-direction: column;
   max-width: 300px;
-  margin: 0 auto;
+  margin: auto;
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -45,8 +44,8 @@
 
 .login-container button {
   text-align: center;
-  padding: 10px 20px;
-  width: 40%;
+  width: 50%;
+  padding: 10px 0px;
   margin: 0 auto;
   border: none;
   border-radius: 50vh;
