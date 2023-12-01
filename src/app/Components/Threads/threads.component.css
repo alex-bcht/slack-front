@@ -98,16 +98,18 @@ button.thread {
 
 .buttonDelete:hover,
 .thread:hover,
-.add-thread button:not(disabled):hover {
+.add-thread button:not(:disabled):hover {
   opacity: 0.8;
   background-color: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
 }
 
 .buttonDelete:active,
 .thread:active,
-.add-thread button:not(disabled):active {
+.add-thread button:not(:disabled):active {
   opacity: 0.6;
   background-color: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
 }
 
 .add-thread input,
@@ -138,11 +140,13 @@ input::placeholder {
 
 input {
   background-color: #e5e5e5;
+  text-align: left;
+  color: grey;
 }
 
 .add-thread input {
   align-items: center;
   justify-content: center;
-  text-align: center;
+  padding-left: 10px;
   border: none;
 }

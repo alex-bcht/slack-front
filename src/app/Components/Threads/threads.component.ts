@@ -20,6 +20,7 @@ export class ThreadsComponent implements OnInit {
   messages!: Message[];
   @Input()
   message!: string;
+  threadLabel!: string;
 
   constructor(
     public threadsService: ThreadsService,
@@ -49,13 +50,23 @@ export class ThreadsComponent implements OnInit {
     this.messagesService
       .createMessage({
         content: this.message,
-        authorId: this.userService.user?.username,
-        threadId: this.actualThread.id,
-        date: new Date().getTime(),
       })
       .subscribe((message: any) => {
         this.messages.push(message);
         this.message = "";
+      });
+  }
+  sendThread() {
+    let lastThreadId = this.getLastThreadId(); // Génère un ID aléatoire pour le thread
+    let newThreadId = lastThreadId ? lastThreadId + 1 : 1;
+    this.threadsService
+      .createThread({
+        id: String(newThreadId),
+        label: this.threadLabel, // Utilise le contenu du thread
+      })
+      .subscribe((thread: any) => {
+        this.threads.push(thread); // Ajoute le thread à la liste des threads
+        this.threadLabel = ""; // Réinitialise le contenu du thread après l'envoi
       });
   }
   deleteMessage(messageId: string) {
@@ -88,5 +99,12 @@ export class ThreadsComponent implements OnInit {
         console.error(error);
       }
     );
+  }
+  getLastThreadId(): number | undefined {
+    if (this.threads.length > 0) {
+      const lastThread = this.threads[this.threads.length - 1]; // Récupère le dernier thread
+      return Number(lastThread.id); // Renvoie l'ID du dernier thread
+    }
+    return undefined; // S'il n'y a pas de thread, renvoie undefined
   }
 }

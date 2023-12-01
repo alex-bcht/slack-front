@@ -15,8 +15,16 @@
       </div>
     </div>
     <div class="add-thread">
-      <input placeholder="Nouveau channel" />
-      <button [disabled]="true">Nouveau Thread</button>
+      <input
+        type="text"
+        [(ngModel)]="threadLabel"
+        maxlength="30"
+        (keyup.enter)="this.sendThread()"
+        placeholder="Nouveau channel"
+      />
+      <button [disabled]="!this.threadLabel" (click)="sendThread()">
+        Nouveau Thread
+      </button>
     </div>
   </div>
   <div class="messageList">

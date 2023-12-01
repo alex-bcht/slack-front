@@ -161,12 +161,20 @@
       "threadId": "1",
       "date": 1701434469669,
       "id": 12
+    },
+    {
+      "content": "test",
+      "id": 13
     }
   ],
   "threads": [
     {
       "id": "1",
       "label": "Discussion Générale"
+    },
+    {
+      "id": "2",
+      "label": "POEC"
     }
   ]
 }
