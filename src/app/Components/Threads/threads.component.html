@@ -5,9 +5,14 @@
       <h2 class="channel-title">CHANNELS</h2>
     </div>
     <div class="side" *ngFor="let thread of threads">
-      <button class="thread" (click)="selectThread(thread)">
-        {{ thread.label }}
-      </button>
+      <div class="buttonContainer">
+        <button class="thread" (click)="selectThread(thread)">
+          {{ thread.label }}
+        </button>
+        <button class="buttonDelete" (click)="deleteThread(thread.id)">
+          X
+        </button>
+      </div>
     </div>
   </div>
   <div class="messageList">
