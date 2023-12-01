@@ -4,15 +4,19 @@
       <h1 class="site-title">Mini-<span>Slack</span></h1>
       <h2 class="channel-title">CHANNELS</h2>
     </div>
-    <div class="side" *ngFor="let thread of threads">
+    <div class="channels" *ngFor="let thread of threads">
       <div class="buttonContainer">
-        <button class="thread" (click)="selectThread(thread)">
-          {{ thread.label }}
-        </button>
         <button class="buttonDelete" (click)="deleteThread(thread.id)">
           X
         </button>
+        <button class="thread" (click)="selectThread(thread)">
+          {{ thread.label }}
+        </button>
       </div>
+    </div>
+    <div class="add-thread">
+      <input placeholder="Nouveau channel" />
+      <button [disabled]="true">Nouveau Thread</button>
     </div>
   </div>
   <div class="messageList">

@@ -8,7 +8,8 @@
 .side-barre {
   display: flex;
   flex-direction: column;
-  width: 400px;
+  min-width: 250px;
+  width: 20%;
 }
 
 h1.site-title {
@@ -37,11 +38,11 @@ h2.channel-title {
   margin-bottom: 10px;
 }
 
-.side {
-  padding: 10px;
+.channels {
   width: 100%;
   display: flex;
   flex-direction: column;
+  background: linear-gradient(to right, #3280c3, #5a64ad, #95539a);
 }
 
 button.thread {
@@ -59,21 +60,68 @@ button.thread {
   width: 100%;
 }
 
+.buttonContainer,
+.add-thread {
+  display: flex;
+  justify-content: left;
+  align-items: center; /* Pour aligner les boutons verticalement */
+  width: 100%;
+  height: 40px;
+  flex-direction: row;
+}
+
 .buttonDelete {
   background-color: transparent;
   border: none;
-  color: rgb(0, 0, 0); /* Couleur du 'X' */
-  font-size: 14px; /* Taille de la police */
+  color: white; /* Couleur du 'X' */
+  font-size: 0.7em; /* Taille de la police */
   cursor: pointer;
   padding: 0;
   width: 20px; /* Largeur du bouton */
-  height: 20px; /* Hauteur du bouton */
+  height: 100%; /* Hauteur du bouton */
   line-height: 1;
   border-radius: 50%; /* Pour obtenir un cercle */
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
-.buttonContainer {
+.thread {
+  font-size: 0.7em;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  padding-left: 10px;
+  cursor: pointer;
+}
+
+.add-thread input,
+.add-thread button {
   display: flex;
-  justify-content: space-evenly;
-  align-items: center; /* Pour aligner les boutons verticalement */
+  height: 100%;
+  width: 50%;
+  border: none;
+}
+
+.add-thread button {
+  background: linear-gradient(to right, #3280c3, #5a64ad, #95539a);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 0.7em;
+}
+.add-thread button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+input::placeholder {
+  color: lightgrey;
+}
+
+.add-thread input {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
