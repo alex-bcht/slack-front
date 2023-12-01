@@ -45,7 +45,5 @@
     maxlength="2000"
     placeholder="Entrez votre message..."
   />
-  <button (click)="this.sendMessage()" [disabled]="!this.message">
-    Envoyer
-  </button>
+  <button (click)="sendMessage()" [disabled]="!this.message">Envoyer</button>
 </form>
