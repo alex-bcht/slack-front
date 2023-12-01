@@ -1,69 +1,152 @@
-h1.site-title span {
-  background: linear-gradient(to right, #c4b2da, #47396d);
+.top-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: row;
+}
+
+.side-barre {
+  display: flex;
+  flex-direction: column;
+  min-width: 250px;
+  width: 20%;
+}
+
+h1.site-title {
+  text-align: center;
+  margin: 20px;
+  font-size: 2em;
+  margin-bottom: 30px;
+  background: #c4b2da;
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
 }
 
-.site-title {
-  text-align: center;
-  font-size: 28px;
-  margin-bottom: 30px;
-  color: #333;
-  letter-spacing: 2px;
-  font-weight: 900;
-  color: #c4b2da;
+.site-title span {
+  background: linear-gradient(to right, #c4b2da, #5e2880);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
-.side {
-  background-color: #fdfdfd;
-  border: 1px solid #e6e6e6;
-  border-radius: 3px;
-  padding: 10px;
+h2.channel-title {
+  font-size: 0.8em;
+  color: white;
+  font-weight: 500;
+  text-align: center;
   margin-bottom: 10px;
-  margin-top: 10px;
-  margin-left: 10px;
-  margin-right: 10px;
-  height: 100%;
-  width: 20%;
-  overflow: auto;
-  position: relative;
+}
+
+.channels {
+  width: 100%;
   display: flex;
   flex-direction: column;
+  background: linear-gradient(to right, #3280c3, #5a64ad, #95539a);
+}
+
+button.thread {
+  background-color: transparent;
+  border: 0px;
+  color: white;
 }
 
 .messageList {
-  background-color: #a44242;
-  border: 1px solid #e6e6e6;
-  border-radius: 3px;
+  background-color: white;
+  color: grey;
   padding: 10px;
-  margin-bottom: 10px;
-  margin-top: 10px;
-  margin-left: 10px;
-  margin-right: 10px;
-  height: 100%;
-  width: 80%;
-  overflow: auto;
-  position: left;
   display: flex;
   flex-direction: column;
+  width: 100%;
+}
+
+.buttonContainer,
+.add-thread {
+  display: flex;
+  justify-content: left;
+  align-items: center; /* Pour aligner les boutons verticalement */
+  width: 100%;
+  height: 40px;
+  flex-direction: row;
 }
 
 .buttonDelete {
   background-color: transparent;
   border: none;
-  color: rgb(0, 0, 0); /* Couleur du 'X' */
-  font-size: 14px; /* Taille de la police */
+  color: white;
+  font-size: 0.7em;
   cursor: pointer;
   padding: 0;
-  width: 20px; /* Largeur du bouton */
-  height: 20px; /* Hauteur du bouton */
-  line-height: 1;
-  border-radius: 50%; /* Pour obtenir un cercle */
+  width: 20px;
+  height: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
-.buttonContainer {
+.thread {
+  font-size: 0.7em;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  padding-left: 10px;
+  cursor: pointer;
+}
+
+.buttonDelete:hover,
+.thread:hover,
+.add-thread button:not(:disabled):hover {
+  opacity: 0.8;
+  background-color: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+}
+
+.buttonDelete:active,
+.thread:active,
+.add-thread button:not(:disabled):active {
+  opacity: 0.6;
+  background-color: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+}
+
+.add-thread input,
+.add-thread button {
   display: flex;
-  justify-content: space-between;
-  align-items: center; /* Pour aligner les boutons verticalement */
+  height: 100%;
+  width: 50%;
+  border: none;
+}
+
+.add-thread button {
+  background: linear-gradient(to right, #3280c3, #5a64ad, #95539a);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 0.7em;
+}
+.add-thread button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+input::placeholder {
+  color: lightgrey;
+}
+
+input {
+  background-color: #e5e5e5;
+  text-align: left;
+  color: grey;
+}
+
+.add-thread input {
+  align-items: center;
+  justify-content: center;
+  padding-left: 10px;
+  border: none;
 }
