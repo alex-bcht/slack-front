@@ -47,27 +47,34 @@ export class ThreadsComponent implements OnInit {
   }
 
   sendMessage() {
-    this.messagesService
-      .createMessage({
-        content: this.message,
-      })
-      .subscribe((message: any) => {
-        this.messages.push(message);
-        this.message = "";
-      });
+    if (this.message.trim() !== "") {
+      this.messagesService
+        .createMessage({
+          content: this.message,
+          authorId: this.userService.user?.username,
+          threadId: this.actualThread.id,
+          date: new Date().getTime(),
+        })
+        .subscribe((message: any) => {
+          this.messages.push(message);
+          this.message = "";
+        });
+    }
   }
   sendThread() {
-    let lastThreadId = this.getLastThreadId(); // Génère un ID aléatoire pour le thread
-    let newThreadId = lastThreadId ? lastThreadId + 1 : 1;
-    this.threadsService
-      .createThread({
-        id: String(newThreadId),
-        label: this.threadLabel, // Utilise le contenu du thread
-      })
-      .subscribe((thread: any) => {
-        this.threads.push(thread); // Ajoute le thread à la liste des threads
-        this.threadLabel = ""; // Réinitialise le contenu du thread après l'envoi
-      });
+    if (this.threadLabel.trim() !== "") {
+      let lastThreadId = this.getLastThreadId(); // Génère un ID aléatoire pour le thread
+      let newThreadId = lastThreadId ? lastThreadId + 1 : 1;
+      this.threadsService
+        .createThread({
+          id: String(newThreadId),
+          label: this.threadLabel, // Utilise le contenu du thread
+        })
+        .subscribe((thread: any) => {
+          this.threads.push(thread); // Ajoute le thread à la liste des threads
+          this.threadLabel = ""; // Réinitialise le contenu du thread après l'envoi
+        });
+    }
   }
   deleteMessage(messageId: string) {
     // Utilisation du service messagesService pour supprimer le message
