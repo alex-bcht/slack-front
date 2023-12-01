@@ -30,6 +30,7 @@
     type="text"
     name="message"
     [(ngModel)]="this.message"
+    (keyup.enter)="this.sendMessage()"
     maxlength="2000"
   />
   <button (click)="this.sendMessage()" [disabled]="!this.message">
