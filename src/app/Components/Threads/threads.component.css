@@ -191,6 +191,7 @@ app-messages {
   text-align: center;
   align-items: center;
   padding: 10px;
+  width: 100%;
 }
 
 .message button {
