@@ -33,6 +33,10 @@
   background-color: #fff;
 }
 
+.login-container input {
+  background-color: #e5e5e5;
+}
+
 .login-container p {
   margin-bottom: 10px;
   font-size: 16px;
@@ -54,7 +58,7 @@
   margin: 0 auto;
   border: none;
   border-radius: 50vh;
-  background: linear-gradient(to right, #47396d, #423185, #0e32a7, #006adc);
+  background: linear-gradient(to right, #3280c3, #5a64ad, #95539a);
   color: #fff;
   font-size: 16px;
   cursor: pointer;
