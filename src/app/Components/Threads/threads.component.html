@@ -21,6 +21,7 @@
         maxlength="30"
         (keyup.enter)="this.sendThread()"
         placeholder="Nouveau channel"
+        autocomplete="off"
       />
       <button [disabled]="!this.threadLabel" (click)="sendThread()">
         Nouveau Thread
@@ -28,7 +29,7 @@
     </div>
   </div>
   <div class="messageList">
-    <div *ngFor="let message of messages">
+    <div class="message" *ngFor="let message of messages">
       <app-messages [message]="message"></app-messages>
       <button class="buttonDelete" (click)="deleteMessage(message.id)">
         X
@@ -44,6 +45,7 @@
     (keyup.enter)="this.sendMessage()"
     maxlength="2000"
     placeholder="Entrez votre message..."
+    autocomplete="off"
   />
   <button (click)="sendMessage()" [disabled]="!this.message">Envoyer</button>
 </form>
