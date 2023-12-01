@@ -7,6 +7,7 @@
   <p>Entrer votre nom d'utilisateur :</p>
   <input type="text" [(ngModel)]="this.username" maxlength="20" />
   <button
+    class="buttondisable"
     (click)="this.UserService.login(this.username)"
     [disabled]="!this.username"
   >
