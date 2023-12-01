@@ -20,19 +20,6 @@
     color: #555;
     margin-bottom: 8px;
   }
-
-  .buttonDelete {
-    background-color: transparent;
-    border: none;
-    color: rgb(0, 0, 0); /* Couleur du 'X' */
-    font-size: 14px; /* Taille de la police */
-    cursor: pointer;
-    padding: 0;
-    width: 20px; /* Largeur du bouton */
-    height: 20px; /* Hauteur du bouton */
-    line-height: 1;
-    border-radius: 50%; /* Pour obtenir un cercle */
-  }
   
   .messageDate {
     font-size: 14px;
