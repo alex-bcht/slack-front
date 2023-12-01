@@ -1,0 +1,27 @@
+.messageContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Ajustez la hauteur en fonction de vos besoins */
+  }
+  
+.messageAuthor {
+    color: #131212;
+    margin-bottom: 0;
+    text-align: left;
+  }
+.messageContent {
+  color: #333;
+  margin-bottom: 0;
+  text-align: center;
+}
+.messageDate {
+  color: #0a0a0a;
+  margin-bottom: 0;
+  text-align: right;
+}
+
+  
+  
+  
