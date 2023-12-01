@@ -1,3 +1,20 @@
+h1.site-title span {
+  background: linear-gradient(to right, #c4b2da, #47396d);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.site-title {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #333;
+  letter-spacing: 2px;
+  font-weight: 900;
+  color: #c4b2da;
+}
+
 .side {
   background-color: #fdfdfd;
   border: 1px solid #e6e6e6;
@@ -30,4 +47,23 @@
   position: left;
   display: flex;
   flex-direction: column;
+}
+
+.buttonDelete {
+  background-color: transparent;
+  border: none;
+  color: rgb(0, 0, 0); /* Couleur du 'X' */
+  font-size: 14px; /* Taille de la police */
+  cursor: pointer;
+  padding: 0;
+  width: 20px; /* Largeur du bouton */
+  height: 20px; /* Hauteur du bouton */
+  line-height: 1;
+  border-radius: 50%; /* Pour obtenir un cercle */
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Pour aligner les boutons verticalement */
 }

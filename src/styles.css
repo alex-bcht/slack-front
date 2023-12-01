@@ -1,11 +1,10 @@
-@font-face {
-  font-family: "Winston SemiBold";
-  src: url("./assets/polices/mulinito.semibold.ttf") format("woff");
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+
+h1 {
   font-weight: 600;
-  font-style: normal;
 }
 
 body {
   background-color: #2d2d2d;
-  font-family: "Winston SemiBold", sans-serif;
+  font-family: "Raleway";
 }

@@ -1,10 +1,15 @@
-<p>Liste des Threads</p>
+<h1 class="site-title">Mini-<span>Slack</span></h1>
+<p>CHANNELS</p>
 <div class="side" *ngFor="let thread of threads">
-  <button (click)="selectThread(thread)">{{ thread.label }}</button>
+  <div class="buttonContainer">
+    <button (click)="selectThread(thread)">{{ thread.label }}</button>
+    <button class="buttonDelete" (click)="deleteThread(thread.id)">X</button>
+  </div>
 </div>
 <div class="messageList">
   <div *ngFor="let message of messages">
     <app-messages [message]="message"></app-messages>
+    <button class="buttonDelete" (click)="deleteMessage(message.id)">X</button>
   </div>
 </div>
 <div class="messageForm">
