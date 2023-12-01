@@ -73,16 +73,18 @@ button.thread {
 .buttonDelete {
   background-color: transparent;
   border: none;
-  color: white; /* Couleur du 'X' */
-  font-size: 0.7em; /* Taille de la police */
+  color: white;
+  font-size: 0.7em;
   cursor: pointer;
   padding: 0;
-  width: 20px; /* Largeur du bouton */
-  height: 100%; /* Hauteur du bouton */
-  line-height: 1;
-  border-radius: 50%; /* Pour obtenir un cercle */
+  width: 20px;
+  height: 100%;
   padding-left: 20px;
   padding-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .thread {
@@ -91,6 +93,22 @@ button.thread {
   height: 100%;
   text-align: left;
   padding-left: 10px;
+  cursor: pointer;
+}
+
+.buttonDelete:hover,
+.thread:hover,
+.add-thread button:not(:disabled):hover {
+  opacity: 0.8;
+  background-color: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+}
+
+.buttonDelete:active,
+.thread:active,
+.add-thread button:not(:disabled):active {
+  opacity: 0.6;
+  background-color: rgba(255, 255, 255, 0.2);
   cursor: pointer;
 }
 
@@ -120,8 +138,15 @@ input::placeholder {
   color: lightgrey;
 }
 
+input {
+  background-color: #e5e5e5;
+  text-align: left;
+  color: grey;
+}
+
 .add-thread input {
   align-items: center;
   justify-content: center;
-  text-align: center;
+  padding-left: 10px;
+  border: none;
 }
