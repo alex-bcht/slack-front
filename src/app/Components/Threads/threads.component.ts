@@ -58,4 +58,35 @@ export class ThreadsComponent implements OnInit {
         this.message = "";
       });
   }
+  deleteMessage(messageId: string) {
+    // Utilisation du service messagesService pour supprimer le message
+    this.messagesService
+      .deleteMessage(messageId)
+      // Utilisation d'un observable pour gérer la réponse asynchrone
+      .subscribe(() => {
+        // Suppression du message du tableau messages
+        this.messages = this.messages.filter(
+          (message) => message.id !== messageId
+        );
+      });
+  }
+
+  deleteThread(threadId: string) {
+    // Utilisation du service threadsService pour supprimer le thread
+    this.threadsService.deleteThread(threadId).subscribe(
+      () => {
+        // Supprimez le thread du tableau des threads
+        this.threads = this.threads.filter((thread) => thread.id !== threadId);
+        // Si le thread supprimé était celui actuellement sélectionné, déselectionnez-le
+        if (this.actualThread && this.actualThread.id === threadId) {
+          this.actualThread = { id: "", label: "" };
+          this.messages = []; // Vous voudrez peut-être vider également les messages associés
+        }
+      },
+      (error: any) => {
+        // Gérez les erreurs ici
+        console.error(error);
+      }
+    );
+  }
 }

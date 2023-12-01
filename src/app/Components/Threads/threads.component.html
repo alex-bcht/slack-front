@@ -13,6 +13,9 @@
   <div class="messageList">
     <div *ngFor="let message of messages">
       <app-messages [message]="message"></app-messages>
+      <button class="buttonDelete" (click)="deleteMessage(message.id)">
+        X
+      </button>
     </div>
   </div>
 </div>

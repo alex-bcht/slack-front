@@ -107,12 +107,6 @@
   ],
   "messages": [
     {
-      "content": "Premier message dans la discussion générale !",
-      "authorId": "Kenza",
-      "threadId": "1",
-      "id": 1
-    },
-    {
       "content": "Salut, je suis la première sur le channel Projets !",
       "authorId": "Kenza",
       "threadId": "2",
@@ -123,13 +117,6 @@
       "authorId": "yolo",
       "threadId": "2",
       "id": 3
-    },
-    {
-      "content": "test",
-      "authorId": "kamiath",
-      "threadId": "1",
-      "date": 1701357683081,
-      "id": 4
     },
     {
       "content": "yo",
