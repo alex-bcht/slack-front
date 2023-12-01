@@ -1,4 +1,4 @@
 node_modules
 .angular
 .vscode
-db.json
+# db.json
