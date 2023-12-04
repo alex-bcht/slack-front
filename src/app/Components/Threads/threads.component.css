@@ -176,8 +176,9 @@ form button {
 }
 
 .message {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 10fr 1fr;
+  justify-content: space-between;
   width: 100%;
   background-color: #f5f5f5;
   border: 1px solid #ddd;
@@ -195,5 +196,5 @@ app-messages {
 }
 
 .message button {
-  justify-content: flex-end;
+  text-align: end;
 }
