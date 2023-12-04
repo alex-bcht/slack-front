@@ -1,7 +1,4 @@
-# TP Fil Rouge - Mini-Slack
-
-Ce repository constitue une base sur laquelle vous allez travailler.
-
+# Mini-Slack
 
 Lorsque vous clonez ce depot, faites `npm install` pour installer les dependances.
 
@@ -9,9 +6,9 @@ Lorsque vous clonez ce depot, faites `npm install` pour installer les dependance
 
 ### Pour pouvoir lancer le front-end
 
-Lancez `ng serve` pour lancer le serveur de développement. 
+Lancez `ng serve` ou `npm run start` pour lancer le serveur de développement.
 
-Allez sur `http://localhost:4200/`. 
+Allez sur `http://localhost:4200/`.
 
 ---
 
@@ -19,12 +16,8 @@ Allez sur `http://localhost:4200/`.
 
 Faites `npm install -g json-server` pour installer les dependances.
 
-Lancez `json-server --watch db.json` pour lancer le serveur de BDD. 
+Lancez `json-server --watch db.json` ou `npm run back` pour lancer le serveur de BDD.
 
-Allez sur `http://localhost:3000/`. 
+Allez sur `http://localhost:3000/`.
 
 ---
-
-# TP
-
-Enoncé : https://nimble-echinacea-d64.notion.site/TP-Mini-Slack-54dbf8b20fa04bfe90f8d5eba0689a4f?pvs=4
