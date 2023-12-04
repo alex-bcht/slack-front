@@ -176,8 +176,8 @@ form button {
 }
 
 .message {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 10fr 1fr;
   justify-content: space-between;
   width: 100%;
   background-color: #f5f5f5;
