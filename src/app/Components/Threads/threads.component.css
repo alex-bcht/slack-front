@@ -196,5 +196,5 @@ app-messages {
 }
 
 .message button {
-  justify-content: flex-end;
+  text-align: end;
 }
