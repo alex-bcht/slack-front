@@ -1,5 +1,6 @@
 import { HttpClient } from "@angular/common/http";
 import { Injectable } from "@angular/core";
+import { ConfigService } from "./config.service";
 
 export interface Thread {
   id: string;
@@ -10,31 +11,33 @@ export interface Thread {
   providedIn: "root",
 })
 export class ThreadsService {
-  constructor(private http: HttpClient) {
+  private apiUrl: string;
+
+  constructor(private http: HttpClient, private configService: ConfigService) {
+    this.apiUrl = configService.getApiUrl();
     this.getThreads().subscribe((threads: any) => {
       this.threads = threads;
-      console.log(this.threads);
     });
   }
   threads = this.getThreads();
 
   getThreads() {
-    return this.http.get("http://localhost:3000/threads");
+    return this.http.get(`${this.apiUrl}/threads`);
   }
 
   getThread(id: string) {
-    return this.http.get(`http://localhost:3000/threads/${id}`);
+    return this.http.get(`${this.apiUrl}/threads/${id}`);
   }
 
   createThread(thread: Thread) {
-    return this.http.post("http://localhost:3000/threads", thread);
+    return this.http.post(`${this.apiUrl}/threads`, thread);
   }
 
   updateThread(thread: Thread) {
-    return this.http.put(`http://localhost:3000/threads/${thread.id}`, thread);
+    return this.http.put(`${this.apiUrl}/threads/${thread.id}`, thread);
   }
 
   deleteThread(id: string) {
-    return this.http.delete(`http://localhost:3000/threads/${id}`);
+    return this.http.delete(`${this.apiUrl}/threads/${id}`);
   }
 }

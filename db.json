@@ -105,81 +105,23 @@
       "id": 26
     },
     {
-<<<<<<< HEAD
       "username": "kamiath",
       "id": 27
     },
     {
       "username": "kamiath",
       "id": 28
-=======
-      "username": "randomuser2",
-      "id": 26
     },
     {
-      "username": "test",
-      "id": 27
-    },
-    {
-      "username": "test",
-      "id": 28
-    },
-    {
-      "username": "test",
+      "username": "kamiath",
       "id": 29
     },
     {
-      "username": "test",
+      "username": "youyou",
       "id": 30
-    },
-    {
-      "username": "test",
-      "id": 31
-    },
-    {
-      "username": "test",
-      "id": 32
-    },
-    {
-      "username": "test",
-      "id": 33
-    },
-    {
-      "username": "test",
-      "id": 34
-    },
-    {
-      "username": "user1",
-      "id": 35
-    },
-    {
-      "username": "test",
-      "id": 36
-    },
-    {
-      "username": "usertest",
-      "id": 37
-    },
-    {
-      "username": "usertest",
-      "id": 38
->>>>>>> bb4fb7df9b07179202b8003dcd3a9cb11a824459
     }
   ],
   "messages": [
-    {
-      "content": "sqdqs",
-      "authorId": "",
-      "threadId": "1",
-      "date": 1701358533782,
-      "id": 6
-    },
-    {
-      "content": "test",
-      "threadId": "1",
-      "date": 1701434314892,
-      "id": 9
-    },
     {
       "content": "yo",
       "authorId": "test",
@@ -226,18 +168,6 @@
       "id": 18
     },
     {
-      "content": "tttt",
-      "threadId": "1",
-      "date": 1701440960329,
-      "id": 19
-    },
-    {
-      "content": "tests",
-      "threadId": "1",
-      "date": 1701440962777,
-      "id": 20
-    },
-    {
       "content": "on est bon",
       "threadId": "7",
       "date": 1701441023558,
@@ -270,6 +200,20 @@
       "threadId": "2",
       "date": 1701465712926,
       "id": 26
+    },
+    {
+      "content": "test",
+      "authorId": "kamiath",
+      "threadId": "1",
+      "date": 1703347098165,
+      "id": 27
+    },
+    {
+      "content": "coucou je suis youyou",
+      "authorId": "youyou",
+      "threadId": "1",
+      "date": 1703347127259,
+      "id": 28
     }
   ],
   "threads": [
