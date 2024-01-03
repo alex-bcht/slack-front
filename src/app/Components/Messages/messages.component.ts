@@ -15,6 +15,7 @@ export class MessagesComponent {
   message!: Message;
 
   formaterTimestamp() {
+    console.log(this.message.date);
     let date = new Date(this.message.date);
     let jour = date.getDate().toString().padStart(2, "0");
     let mois = (date.getMonth() + 1).toString().padStart(2, "0"); // Janvier = 0
