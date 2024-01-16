@@ -10,6 +10,7 @@ export interface Thread {
   providedIn: "root",
 })
 export class ThreadsService {
+  private apiUrl = "http://localhost:3000/threads"
   constructor(private http: HttpClient) {
     this.getThreads().subscribe((threads: any) => {
       this.threads = threads;
@@ -28,6 +29,7 @@ export class ThreadsService {
 
   createThread(thread: Thread) {
     return this.http.post("http://localhost:3000/threads", thread);
+  
   }
 
   updateThread(thread: Thread) {
